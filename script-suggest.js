@@ -1,0 +1,78 @@
+const itemsRecently = [
+  {
+    id: 1,
+    tripType: "DAY TRIP",
+    name: "Ho Chi Minh City: Private Street Food Motorbike Tour",
+    description: "4 hours • Pickup available",
+    image: "images/rated-image.png",
+    cost: "đ800,000",
+    review: "4.8 (638)",
+  },
+  {
+    id: 2,
+    tripType: "DAY TRIP",
+    name: "Saigon: City Day Sights & Local Food Tour | Opt: Ao Dai Riders",
+    description: "4 hours • Pickup available",
+    image: "images/rated-image.png",
+    cost: "đ671,500",
+    review: "5 (42)",
+  },
+  {
+    id: 3,
+    tripType: "DAY TRIP",
+    name: "Ho Chi Minh City: Walking Food Tour with 13 Tastings",
+    description: "3.5 hours • Pickup available",
+    image: "images/rated-image.png",
+    cost: "đ394,100",
+    review: "4.7 (848)",
+  },
+  {
+    id: 4,
+    tripType: "DAY TRIP",
+    name: "Saigon: Night Sights & Local Food Tour w Ao Dai Rider Option",
+    description: "3.5 hours • Pickup available",
+    image: "images/rated-image.png",
+    cost: "đ2,910,800",
+    review: "4.8 (276)",
+  },
+];
+
+function toggleFavorite(e, img) {
+  e.preventDefault();
+  if (img.dataset.favorite === "false") {
+    img.src = "images/fav-heart-ON.png";
+    img.dataset.favorite = "true";
+  } else {
+    img.src = "images/fav-heart.png";
+    img.dataset.favorite = "false";
+  }
+}
+
+// Populate the recently list
+const recentlyList = document.getElementById("recently-list");
+itemsRecently.forEach((item) => {
+  const listItem = document.createElement("li");
+  listItem.innerHTML = `
+    <a href="detail.html">
+        <div class="tour-image">
+            <img src="${item.image}" alt="${item.name}" class="pro-image">
+        </div>
+        <img src="images/fav-heart.png" alt="${item.name}" class="fav-heart" onclick="toggleFavorite(event, this)" data-favorite="false">        
+        <a href="detail.html" style="text-decoration: none;">
+        <div class="content-recently">
+            <h3>${item.tripType}</h3>
+            <h2>${item.name}</h2>
+            <p>${item.description}</p>
+            <div class="info-recently">
+                <h4>From ${item.cost}</h4>
+                <div class="feedback-recently">
+                    <img src="images/star.png" alt="${item.name}">
+                    <h5>${item.review}</h5>
+                </div>
+            </div>
+        </div>
+    </a>    
+    </a>    
+    `;
+  recentlyList.appendChild(listItem);
+});
