@@ -321,11 +321,11 @@ function displayItems(startIndex) {
             <a href="detail.html" style="text-decoration: none;">
             <div class="content-product">
                 <h3>${item.tripType}</h3>
-                <h2>${item.name}</h2>
-                <p>${item.description}</p>
-                <div class="info-product">
-                    <h4>From ${item.cost}</h4>
-                    <div class="feedback-product">
+                <h2 class="line-clamp-2">${item.name}</h2>
+                <p class="line-clamp-1">${item.description}</p>
+                <div class="info-product flex flex-row items-end sm:items-center justify-between gap-[5px]">
+                    <h4 class="w-1/2">From ${item.cost}</h4>
+                    <div class="feedback-product w-1/2 justify-end">
                         <img src="images/star.png" alt="${item.name}">
                         <h5>${item.review}</h5>
                     </div>

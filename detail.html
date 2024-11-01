@@ -6,56 +6,101 @@
     <link rel="icon" href="images/logo-text.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/cb4485a197.js"
+      crossorigin="anonymous"
+    ></script>
     <title>SaigonWonder | Detail</title>
   </head>
 
   <body>
-    <div class="header">
-      <div class="logo-search">
-        <div class="logo-text">
-          <a href="index.html" style="text-decoration: none">
-            <span>SAIGON<br />WONDER</span>
-          </a>
+    <div
+      class="header-wrap h-[70px] md:h-[80px] fixed top-0 left-0 right-0 shadow-lg bg-white z-[9999]"
+    >
+      <div class="header h-full px-5 md:py-3 py-[22.5px]">
+        <div class="logo-search gap-[5px] sm:gap-[50px]">
+          <div class="logo-text">
+            <a href="index.html" class="no-underline">
+              <span class="text-base md:text-xl">SAIGON<br />WONDER</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="search-container">
-        <div class="search">
-          <img src="images/search.png" alt="" />
-          <span>Find places and things to do</span>
-          <button class="search-btn">
-            <p>Search</p>
-          </button>
-        </div>
+        <div class="search-container justify-end lg:justify-between gap-[30px]">
+          <div
+            class="search flex items-center justify-end md:justify-between border-0 md:border-[2px] md:border-[#dcdfe4] p-0 md:p-2.5 w-auto h-14 relative md:w-[513px] rounded-[200px]"
+          >
+            <img
+              src="images/search.png"
+              alt=""
+              class="lg:w-6 lg:h-6 w-8 h-8 m-0 p-0 object-contain flex-shrink-0"
+            />
+            <input
+              class="hidden w-full h-full outline-none inline-block flex-grow-1 mr-2.5 md:line-clamp-1"
+              placeholder="Find places and things to do"
+            />
+            <button class="search-btn hidden md:block">
+              <p>Search</p>
+            </button>
+          </div>
 
-        <div class="btn-img">
-          <img src="images/Heart.png" alt="" />
-          <img src="images/Wishlist.png" alt="" />
-          <img src="images/Profile.png" alt="" />
+          <div class="btn-img gap-5 sm:gap-[50px]">
+            <img src="images/Heart.png" alt="" />
+            <img src="images/Wishlist.png" alt="" />
+            <img src="images/Profile.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="detail-main-content">
+    <div class="detail-main-content px-4 xl:px-0">
       <div class="tour-name-image">
         <div class="name">
           <div class="type-title">
             <h6>DAY TRIP</h6>
             <h1>Ho Chi Minh: Cu Chi Tunnels and Mekong Delta Full-Day Tour</h1>
           </div>
-          <div class="star-feedback-review">
-            <div class="star">
+          <div
+            class="star-feedback-review flex items-center gap-[15px] mt-[15px]"
+          >
+            <div class="star flex">
               <img src="images/star-round.png" alt="star" />
               <img src="images/star-round.png" alt="star" />
               <img src="images/star-round.png" alt="star" />
               <img src="images/star-round.png" alt="star" />
               <img src="images/star-round-half.png" alt="star" />
             </div>
-            <span id="rating-number">4.6 / 5</span>
-            <span id="review-number">4467 reviews</span>
+            <span
+              id="rating-number"
+              class="text-base font-bold leading-[20.24px] text-left"
+              >4.6 / 5</span
+            >
+            <span
+              id="review-number"
+              class="text-base font-medium leading-[20.24px] text-left underline text-[#2f3e46]"
+              >4467 reviews</span
+            >
           </div>
-          <div class="image">
-            <img src="images/product-image-1.png" alt="img-1" />
-            <img src="images/product-image-2.png" alt="img-2" />
-            <div class="last-col-image">
+          <div
+            class="image rounded-[5px] flex justify-between gap-[15px] mt-[15px] relative"
+          >
+            <img
+              src="images/product-image-1.png"
+              alt="img-1"
+              class="sm:flex-[2]"
+            />
+            <img
+              src="images/product-image-2.png"
+              alt="img-2"
+              class="sm:flex-1 sm:block hidden"
+            />
+            <div
+              class="last-col-image hidden sm:flex flex-col gap-[15px] flex-1"
+            >
               <img src="images/product-image-3.png" alt="img-3" />
               <img src="images/product-image-4.png" alt="img-4" />
             </div>
@@ -133,8 +178,12 @@
             <div class="highlighted_review-choose_date">
               <div class="highlighted_review">
                 <h3>Highlighted reviews from other travelers</h3>
-                <div class="feedback-card-container">
-                  <div class="feedback-card">
+                <div
+                  class="feedback-card-container mt-[25px] flex flex-wrap lg:flex-nowrap gap-5"
+                >
+                  <div
+                    class="feedback-card w-full lg:w-auto flex flex-col p-[25px] border border-[#d9d9d9] rounded-[20px] shadow-lg gap-[10px]"
+                  >
                     <div class="feedback-star">
                       <img src="images/star-round.png" alt="star" />
                       <img src="images/star-round.png" alt="star" />
@@ -142,14 +191,16 @@
                       <img src="images/star-round.png" alt="star" />
                       <img src="images/star-round.png" alt="star" />
                     </div>
-                    <div class="feeback-user-info">
+                    <div
+                      class="feeback-user-info flex flex-row items-center gap-5"
+                    >
                       <img src="images/HENDI THE HEN.png" alt="cbh" />
                       <div class="feedback-time-date">
                         <p>Kimberly – Philippines</p>
                         <span>9 October 2024</span>
                       </div>
                     </div>
-                    <div class="feedback-content">
+                    <div class="feedback-content line-clamp-4">
                       <span
                         >Our recent trip to the Cu Chi Tunnels and Mekong River
                         was truly unforgettable, thanks to our exceptional tour
@@ -157,9 +208,15 @@
                         enriched our experience, especially during our
                       </span>
                     </div>
-                    <h6>Read more</h6>
+                    <h6
+                      class="text-xs font-semibold leading-[15.18px] text-right text-[#2f3e46] underline flex-1 cursor-pointer"
+                    >
+                      Read more
+                    </h6>
                   </div>
-                  <div class="feedback-card">
+                  <div
+                    class="feedback-card w-full lg:w-auto flex flex-col p-[25px] border border-[#d9d9d9] rounded-[20px] shadow-lg gap-[10px]"
+                  >
                     <div class="feedback-star">
                       <img src="images/star-round.png" alt="star" />
                       <img src="images/star-round.png" alt="star" />
@@ -167,7 +224,9 @@
                       <img src="images/star-round.png" alt="star" />
                       <img src="images/star-round.png" alt="star" />
                     </div>
-                    <div class="feeback-user-info">
+                    <div
+                      class="feeback-user-info flex flex-row items-center gap-5"
+                    >
                       <img src="images/HENDI THE HEN.png" alt="cbh" />
                       <div class="feedback-time-date">
                         <p>Kimberly – Philippines</p>
@@ -182,15 +241,22 @@
                         enriched our experience, especially during our
                       </span>
                     </div>
-                    <h6>Read more</h6>
+                    <h6
+                      class="text-xs font-semibold leading-[15.18px] text-right text-[#2f3e46] underline flex-1 cursor-pointer"
+                    >
+                      Read more
+                    </h6>
                   </div>
                 </div>
-                <h5>See more reviews</h5>
+                <h5 class="cursor-pointer">See more reviews</h5>
               </div>
               <div class="choose_date">
                 <h3>Select participants and date</h3>
-                <div class="select-button" style="flex-wrap: wrap">
+                <div
+                  class="select-button items-center justify-between flex flex-col gap-[10px] lg:flex-row"
+                >
                   <div
+                    class="w-full lg:w-fit"
                     style="
                       display: flex;
                       justify-content: space-between;
@@ -205,7 +271,7 @@
                       <option value="option-price">Select date</option>
                     </select>
                   </div>
-                  <button id="select-price-btn">
+                  <button id="select-price-btn" class="flex-1 w-full lg:w-fit">
                     <p>Check availability</p>
                   </button>
                 </div>
@@ -213,17 +279,22 @@
             </div>
             <div class="experience-container">
               <h3>Experience</h3>
-              <div class="highlights">
+              <div class="highlights flex flex-col lg:flex-row gap-5 m-0">
                 <p>Highlights</p>
                 <div class="highlights-content">
-                  <span
-                    >• Check out two main attractions from Ho Chi Minh City
-                    <br />
-                    • Explore the huge underground network of Cu Chi Tunnels
-                    <br />
-                    • Discover the beauty of the Mekong Delta region <br />
-                    • Try your hand at the shooting range <br />
-                    • Enjoy a local lunch with Vietnamese cuisine</span
+                  <span>
+                    <span
+                      >• Check out two main attractions from Ho Chi Minh City
+                      <br />
+                      • Explore the huge underground network of Cu Chi Tunnels
+                      <br />
+                      • Discover the beauty of the Mekong Delta region <br />
+                      • Try your hand at the shooting range <br />
+                      • Enjoy a local lunch with Vietnamese cuisine
+                    </span>
+                    <button class="w-fit underline text-[#0071eb] block">
+                      Read more
+                    </button></span
                   >
                 </div>
               </div>
@@ -237,36 +308,42 @@
                 margin: 20px 0;
               "
             />
-            <div class="full-description">
+            <div
+              class="full-description flex flex-col lg:flex-row gap-5 mt-0 lg:mt-5"
+            >
               <p>Full description</p>
-              <span
-                >In the morning, get picked up at your central hotels and head
-                to Cu Chi Tunnels. After 1.5 hours ride, we arrive at the
-                tunnels where you will get a chance to learn about the
-                fascinating history and significance of the tunnels during the
-                Vietnam War. Crawl distances of the tunnels, try your hand at
-                the shooting range, and witness the intricate network of
-                underground tunnels and traps that played a significant role in
-                the war. <br />
-                <br />
-                After exploring the tunnels, we'll head to a local restaurant
-                for lunch to try some of the delicious local Vietnamese cuisine
-                (vegan food available). <br />
-                <br />
-                After lunch, we'll head to My Tho - the heart of Mekong Delta.
-                You'll get a glimpse into the daily life of the locals as we
-                take a boat ride down the Mekong River, where you can enjoy the
-                picturesque scenery of the surrounding countryside.<br />
-                <br />
-                We will then take a sampan ride through the small waterways with
-                coconut palms line both sides, where you can experience the
-                rural lifestyle, stop by the bee house to enjoy some local
-                fruits and honey tea, listen to a live local music performance
-                performed by the villagers.<br />
-                <br />
-                We'll wrap up our day and head back to Ho Chi Minh City in the
-                afternoon and arrive approximately at 6:35PM.</span
-              >
+              <span>
+                <span class="line-clamp-5 lg:line-clamp-[9]">
+                  In the morning, get picked up at your central hotels and head
+                  to Cu Chi Tunnels. After 1.5 hours ride, we arrive at the
+                  tunnels where you will get a chance to learn about the
+                  fascinating history and significance of the tunnels during the
+                  Vietnam War. Crawl distances of the tunnels, try your hand at
+                  the shooting range, and witness the intricate network of
+                  underground tunnels and traps that played a significant role
+                  in the war. <br />
+                  After exploring the tunnels, we'll head to a local restaurant
+                  for lunch to try some of the delicious local Vietnamese
+                  cuisine (vegan food available). <br />
+                  <br />
+                  After lunch, we'll head to My Tho - the heart of Mekong Delta.
+                  You'll get a glimpse into the daily life of the locals as we
+                  take a boat ride down the Mekong River, where you can enjoy
+                  the picturesque scenery of the surrounding countryside.<br />
+                  <br />
+                  We will then take a sampan ride through the small waterways
+                  with coconut palms line both sides, where you can experience
+                  the rural lifestyle, stop by the bee house to enjoy some local
+                  fruits and honey tea, listen to a live local music performance
+                  performed by the villagers.<br />
+                  <br />
+                  We'll wrap up our day and head back to Ho Chi Minh City in the
+                  afternoon and arrive approximately at 6:35PM.
+                </span>
+                <button class="w-fit underline text-[#0071eb] block">
+                  Read more
+                </button>
+              </span>
             </div>
             <hr
               style="
@@ -277,57 +354,64 @@
                 margin: 20px 0;
               "
             />
-            <div class="includes-container">
+            <div
+              class="includes-container flex flex-col lg:flex-row gap-5 mt-0 lg:mt-5"
+            >
               <p>Includes</p>
-              <div class="includes-list">
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>Roundtrip air-conditioned transportation</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>English-speaking guide</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>All entry fees</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>Motorboat trip and sampan ride</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>Cool tissues onboard and 1 bottle of water</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>Vietnamese lunch (vegan food available)</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>Travel insurance</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span
-                    >Pickup from centrally located hotels (District 1, 3,
-                    4)</span
-                  >
-                </div>
-                <div class="includes-item">
-                  <img src="images/have.png" alt="" />
-                  <span>Drop-off in the center of District 1</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/not-have.png" alt="" />
-                  <span>Bullets (if you try shooting)</span>
-                </div>
-                <div class="includes-item">
-                  <img src="images/not-have.png" alt="" />
-                  <span>Tips (optional)</span>
-                </div>
-              </div>
+              <span>
+                <span class="includes-list line-clamp-5 lg:line-clamp-[9]">
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>Roundtrip air-conditioned transportation</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>English-speaking guide</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>All entry fees</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>Motorboat trip and sampan ride</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>Cool tissues onboard and 1 bottle of water</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>Vietnamese lunch (vegan food available)</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>Travel insurance</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span
+                      >Pickup from centrally located hotels (District 1, 3,
+                      4)</span
+                    >
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/have.png" alt="" />
+                    <span>Drop-off in the center of District 1</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/not-have.png" alt="" />
+                    <span>Bullets (if you try shooting)</span>
+                  </div>
+                  <div class="includes-item">
+                    <img src="images/not-have.png" alt="" />
+                    <span>Tips (optional)</span>
+                  </div>
+                </span>
+                <button class="w-fit underline text-[#0071eb] block">
+                  Read more
+                </button>
+              </span>
             </div>
             <hr
               style="
@@ -338,32 +422,41 @@
                 margin: 20px 0;
               "
             />
-            <div class="important-info">
+            <div
+              class="important-info flex flex-col lg:flex-row gap-5 mt-0 lg:mt-5"
+            >
               <p>Important information</p>
               <div class="important-contents">
-                <span
-                  ><b>Know before you go</b>
-                  <ul
-                    style="list-style-type: disc; list-style-position: inside"
-                  >
-                    <li>
-                      For standard group, pickup at your hotel in the center of
-                      District 1, 3 and 4 (except for Tan Dinh & Dakao Ward),
-                      drop-off at the center of District 1 only.
-                    </li>
-                    <li>
-                      For VIP Group, pickup and drop off at your hotels in
-                      District 1, 3 and 4.
-                    </li>
-                  </ul>
+                <span>
+                  <span
+                    ><b>Know before you go</b>
+                    <ul
+                      style="list-style-type: disc; list-style-position: inside"
+                    >
+                      <li>
+                        For standard group, pickup at your hotel in the center
+                        of District 1, 3 and 4 (except for Tan Dinh & Dakao
+                        Ward), drop-off at the center of District 1 only.
+                      </li>
+                      <li>
+                        For VIP Group, pickup and drop off at your hotels in
+                        District 1, 3 and 4.
+                      </li>
+                    </ul>
+                  </span>
+                  <button class="w-fit underline text-[#0071eb] block">
+                    Read more
+                  </button>
                 </span>
               </div>
             </div>
           </div>
-          <div class="price-gift">
+          <div class="price-gift hidden md:flex flex-col flex-1 gap-[30px]">
             <div class="price-container">
-              <div class="price-check">
-                <div class="price">
+              <div
+                class="price-check justify-center lg:justify-between lg:gap-[3px] gap-2.5"
+              >
+                <div class="price flex flex-col items-center lg:block">
                   <span>From</span>
                   <h4>đ1,157,100</h4>
                   <span>per person</span>
@@ -398,10 +491,15 @@
           </div>
         </div>
         <div class="suggest">
-          <div class="title-recently">
+          <div
+            class="title-recently flex my-[25px] items-center gap-[1px] md:gap-5"
+          >
             <h3 id="also-like">You might also like...</h3>
           </div>
-          <ul id="recently-list"></ul>
+          <ul
+            id="recently-list"
+            class="w-full p-0 mt-[25px] flex gap-x-5 gap-y-[30px] overflow-x-scroll"
+          ></ul>
         </div>
         <hr
           style="
@@ -414,7 +512,7 @@
         />
         <h3 id="customer-review">Customer reviews</h3>
         <div class="rating-summary">
-          <div class="rating">
+          <div class="rating flex flex-col lg:flex-row gap-[40px]">
             <div class="rating-and-star">
               <h4 id="overall">Overall rating</h4>
               <div class="rating-content">
@@ -431,7 +529,9 @@
               </div>
               <span id="rating-base">based on 4467 reviews</span>
             </div>
-            <div class="seperate"></div>
+            <div
+              class="seperate border-l-2 border-[#d9d9d9] hidden md:block h-auto"
+            ></div>
             <div class="summary">
               <p>Review summary</p>
               <div class="summary-item">
@@ -457,12 +557,14 @@
             </div>
           </div>
         </div>
-        <button class="filter-btn">
+        <button
+          class="filter-btn my-10 md:hidden text-base flex items-center bg-transparent border border-[#d9d9d9] px-4 py-2.5 gap-[5px] rounded-lg hover:bg-[#d9d9d9] transition-all duration-[.2s] hover:pointer"
+        >
           <img src="images/sliders-solid.svg" alt="" width="16" height="16" />
           Filter
         </button>
         <div class="reviews-container">
-          <div class="reviews-filter">
+          <div class="reviews-filter lg:flex flex-1 flex-col gap-[30px] hidden">
             <span>Filter</span>
             <div class="filter-group">
               <div class="filter-group-item">
@@ -607,7 +709,7 @@
           </div>
           <div class="feedback-reviews">
             <div class="feedback-reviews-items">
-              <div class="star">
+              <div class="star flex">
                 <img src="images/star-round.png" alt="star" />
                 <img src="images/star-round.png" alt="star" />
                 <img src="images/star-round.png" alt="star" />
@@ -643,7 +745,7 @@
               "
             />
             <div class="feedback-reviews-items">
-              <div class="star">
+              <div class="star flex">
                 <img src="images/star-round.png" alt="star" />
                 <img src="images/star-round.png" alt="star" />
                 <img src="images/star-round.png" alt="star" />
@@ -678,7 +780,7 @@
               "
             />
             <div class="feedback-reviews-items">
-              <div class="star">
+              <div class="star flex">
                 <img src="images/star-round.png" alt="star" />
                 <img src="images/star-round.png" alt="star" />
                 <img src="images/star-round.png" alt="star" />
@@ -727,52 +829,144 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-store">
-          <h3>Mobile</h3>
-          <img src="images/Google Play.png" alt="GooglePlayDownload" />
-          <img src="images/App Store.png" alt="AppStoreDownload" />
+    <div class="footer-wrap">
+      <div class="footer px-4 py-[75px]">
+        <div class="footer-content">
+          <div class="footer-store w-full flex flex-col lg:grow-0 lg:w-fit">
+            <h3 class="w-fit">Mobile</h3>
+            <figure class="flex flex-row lg:flex-col gap-2">
+              <img
+                src="images/Google Play.png"
+                alt="GooglePlayDownload"
+                class="flex-1 lg:flex-0 max-w-[190px]"
+              />
+              <img
+                src="images/App Store.png"
+                alt="AppStoreDownload"
+                class="flex-1 lg:flex-0 max-w-[190px]"
+              />
+            </figure>
+          </div>
+          <div class="footer-support w-full md:w-fit">
+            <h3 class="flex items-center gap-1">
+              Support
+              <i
+                class="fa-solid fa-angle-down lg:hidden transition-all duration-[.2s]"
+              ></i>
+            </h3>
+            <ul class="gap-6 hidden lg:flex">
+              <li>Contact</li>
+              <li>Legal Notice</li>
+              <li>Privacy Policy</li>
+              <li>Cookies and Marketing Preferences</li>
+              <li>Information according to the Digital Services Act</li>
+              <li>Sitemap</li>
+              <li>Do not Sell or Share my Personal Information</li>
+            </ul>
+          </div>
+          <div class="footer-company w-full md:w-fit">
+            <h3 class="flex items-center gap-1">
+              Company
+              <i
+                class="fa-solid fa-angle-down lg:hidden transition-all duration-[.2s]"
+              ></i>
+            </h3>
+            <ul class="gap-6 hidden lg:flex">
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Press</li>
+              <li>Gift Cards</li>
+              <li>Explorer</li>
+            </ul>
+          </div>
+          <div class="footer-work w-full md:w-fit">
+            <h3 class="flex items-center gap-1">
+              Work With Us
+              <i
+                class="fa-solid fa-angle-down lg:hidden transition-all duration-[.2s]"
+              ></i>
+            </h3>
+            <ul class="gap-6 hidden lg:flex">
+              <li>As a Supply Partner</li>
+              <li>As a Content Creator</li>
+              <li>As an Affiliate Partner</li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-support">
-          <h3>Support</h3>
-          <span>Contact</span>
-          <span>Legal Notice</span>
-          <span>Privacy Policy</span>
-          <span>Cookies and Marketing Preferences</span>
-          <span>Information according to the Digital Services Act</span>
-          <span>Sitemap</span>
-          <span>Do not Sell or Share my Personal Information</span>
-        </div>
-        <div class="footer-company">
-          <h3>Company</h3>
-          <span>About Us</span>
-          <span>Careers</span>
-          <span>Blog</span>
-          <span>Press</span>
-          <span>Gift Cards</span>
-          <span>Explorer</span>
-        </div>
-        <div class="footer-work">
-          <h3>Work With Us</h3>
-          <span>As a Supply Partner</span>
-          <span>As a Content Creator</span>
-          <span>As an Affiliate Partner</span>
-        </div>
-      </div>
-      <div class="footer-social">
-        <h4>© 2024 SaigonWonder. Made by Chau Bao Han.</h4>
-        <div style="display: flex; gap: 10px">
-          <a href="https://x.com/"><img src="images/x.png" alt="X" /></a>
-          <a href="https://www.facebook.com/"
-            ><img src="images/facebook.png" alt="X"
-          /></a>
-          <a href="https://www.instagram.com/"
-            ><img src="images/ins.png" alt="X"
-          /></a>
+        <div class="footer-social">
+          <h4>© 2024 SaigonWonder. Made by Chau Bao Han.</h4>
+          <div style="display: flex; gap: 10px">
+            <a href="https://x.com/"><img src="images/x.png" alt="X" /></a>
+            <a href="https://www.facebook.com/"
+              ><img src="images/facebook.png" alt="X"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="images/ins.png" alt="X"
+            /></a>
+          </div>
         </div>
       </div>
     </div>
     <script src="script-suggest.js"></script>
+    <script>
+      const screenWidth = window.innerWidth;
+      const lineLimitDesktop = getComputedStyle(
+        document.documentElement
+      ).getPropertyValue("--line-limit-desktop");
+      const lineLimitMobile = getComputedStyle(
+        document.documentElement
+      ).getPropertyValue("--line-limit-mobile");
+
+      let content = [
+        $(".full-description > span"),
+        $(".includes-container > span"),
+        $(".highlights .highlights-content > span"),
+        $(".important-info .important-contents > span"),
+      ];
+
+      content.forEach((el, index) => {
+        const spanEle = el.children("span");
+        const actualHeight = spanEle[0].scrollHeight;
+        const button = el.children("span button");
+
+        console.log(spanEle);
+
+        button.on("click", () => {
+          if (spanEle.hasClass("line-clamp-5 lg:line-clamp-[9]")) {
+            button[0].innerText = "Show less";
+            spanEle.css({
+              maxHeight: "unset",
+              flex: 1,
+            });
+          } else {
+            button[0].innerText = "Read more";
+            spanEle.removeAttr("style");
+          }
+          spanEle.toggleClass("line-clamp-5 lg:line-clamp-[9]");
+        });
+
+        if (
+          (screenWidth > 992 && actualHeight <= 26 * lineLimitDesktop) ||
+          (screenWidth < 992 && actualHeight <= 26 * lineLimitMobile)
+        ) {
+          button.hide();
+        }
+      });
+
+      let footerMenu = [
+        $(".footer-support h3"),
+        $(".footer-company h3"),
+        $(".footer-work h3"),
+      ];
+
+      footerMenu.forEach((el, index) => {
+        el.on("click", () => {
+          const list = el.parent().children("ul");
+          list.toggle();
+          el.children("i").toggleClass("-rotate-180");
+        });
+      });
+    </script>
   </body>
 </html>

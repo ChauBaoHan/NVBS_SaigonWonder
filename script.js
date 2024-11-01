@@ -162,8 +162,8 @@ itemsRecommended.forEach((item) => {
         <a href="detail.html" style="text-decoration: none;">
         <div class="content-recommended">
             <h3>${item.tripType}</h3>
-            <h2>${item.name}</h2>
-            <p>${item.description}</p>
+            <h2 class="line-clamp-2">${item.name}</h2>
+            <p class="line-clamp-1">${item.description}</p>
             <div class="info-recommended">
                 <h4>From ${item.cost}</h4>
                 <div class="feedback-recommended">
@@ -191,8 +191,8 @@ itemsRated.forEach((item) => {
             <a href="detail.html" style="text-decoration: none;">
             <div class="content-rated">
                 <h3>${item.tripType}</h3>
-                <h2>${item.name}</h2>
-                <p>${item.description}</p>
+                <h2 class="line-clamp-2">${item.name}</h2>
+                <p class="line-clamp-1">${item.description}</p>
                 <div class="info-rated">
                     <h4>From ${item.cost}</h4>
                     <div class="feedback-rated">
@@ -220,8 +220,8 @@ itemsRecently.forEach((item) => {
         <a href="detail.html" style="text-decoration: none;">
         <div class="content-recently">
             <h3>${item.tripType}</h3>
-            <h2>${item.name}</h2>
-            <p>${item.description}</p>
+            <h2 class="line-clamp-2">${item.name}</h2>
+            <p class="line-clamp-1">${item.description}</p>
             <div class="info-recently">
                 <h4>From ${item.cost}</h4>
                 <div class="feedback-recently">
